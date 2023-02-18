@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+   <!-- #Attribute syntax -->
+        <!-- attr="value" => has value -->
+        <!-- attr => valueless attributes-->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>HTML and CSS form - Beginners</title>
+</head>
+<body>
+    <form action="#" class="form">
+        <h1>You might want to <span class="blue-text">sign up</span>...</h1>
+        <input type="text" id="name" placeholder="Your name..."> <!--This a self-closing element or tag-->
+        <br>
+        <input type="text" id="surname" placeholder="Your surname (optional)...">
+        <br>
+        <input type="email" id="email" placeholder="Your email...">
+        <br>
+        <input type="password" id="password" placeholder="Your password">
+        <br>
+        <h2 class="blue-text">Gender</h2>
+        <label for="male">
+            <input type="radio" id="male" name="gender"> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender"> Female
+        </label>
+        <label for="prefer-not-to-say">
+            <input type="radio" id="prefer-not-to-say" name="gender"> Prefer not to say
+        </label>
+        <br>
+        <button>Let's go</button>
+    </form>
+</body>
+</html>
