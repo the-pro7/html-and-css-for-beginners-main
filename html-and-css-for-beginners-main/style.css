@@ -9,8 +9,10 @@
     font-family: 'Poppins', sans-serif;
     /* CSS varibable */
     --blue-color: #199CFB;
+    --form-bg: rgb(244, 244, 244);
 }
 
+/* Utility classes */
 .blue-text {
     color: var(--blue-color);
 }
@@ -19,16 +21,22 @@ body {
     /* element/type selector */
     /* Flexbox */
     display: flex; /* flex-container made*/
-    align-items: center;
-    justify-content: center;
+    align-items: center; /*Vertically aligns
+     the flex-items in the flex-container*/
+    justify-content: center; /*Horizontally aligns 
+    the flex-items*/
     height: 100vh;
    
 }
 
 .form {
+    /* Creates a beautiful shadow behind the form */
     box-shadow: 3px 3px 10px rgb(0 0 0 / .15),
     -3px -3px 10px rgb(0 0 0 / .15);
+    /* Takes away the sharp corners */
     border-radius: 10px;
+    /* Turns the form into a flex-contaienr
+     */
     display: flex;
     flex-direction: column;
     padding: 2em;

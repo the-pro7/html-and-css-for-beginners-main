@@ -6,23 +6,29 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>HTML and CSS form - Beginners</title>
 </head>
 <body>
+    <!-- Form container. Always use the form element
+                     for forms -->
     <form action="#" class="form">
-        <h1>You might want to <span class="blue-text">sign up</span>...</h1>
-        <input type="text" id="name" placeholder="Your name..."> <!--This a self-closing element or tag-->
+        <!-- Form title -->
+        <h1 class="form-title">You might want to <span class="blue-text">sign up</span>...</h1>
+        <!-- Creates an input for user -->
+        <input type="text" id="name" placeholder="Your name..." class="form-input"> <!--This a self-closing element or tag-->
+       <!-- Inserts a single line break -->
         <br>
-        <input type="text" id="surname" placeholder="Your surname (optional)...">
+        <input type="text" id="surname" placeholder="Your surname (optional)..." class="form-input">
         <br>
-        <input type="email" id="email" placeholder="Your email...">
+        <input type="email" id="email" placeholder="Your email..." class="form-input">
         <br>
-        <input type="password" id="password" placeholder="Your password">
+        <input type="password" id="password" placeholder="Your password" class="form-input">
         <br>
+        <!-- Gender section of our form -->
         <h2 class="blue-text">Gender</h2>
         <label for="male">
             <input type="radio" id="male" name="gender"> Male
@@ -34,7 +40,8 @@
             <input type="radio" id="prefer-not-to-say" name="gender"> Prefer not to say
         </label>
         <br>
-        <button>Let's go</button>
+        <!-- Every form needs a button to submit it -->
+        <button class="submit-btn">Let's go</button>
     </form>
 </body>
 </html>
