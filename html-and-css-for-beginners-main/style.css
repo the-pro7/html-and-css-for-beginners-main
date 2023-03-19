@@ -10,6 +10,7 @@
     /* CSS varibable */
     --blue-color: #199CFB;
     --form-bg: rgb(244, 244, 244);
+    
 }
 
 /* Utility classes */
@@ -40,4 +41,43 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2em;
+    width: 80%;
+    max-width: 500px;
+}
+
+.form .form-title {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto 0.5em;
+    line-height: 1.1;
+}
+
+/* chainning multiple selectors */
+.form .form-input {
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #199CFB;
+    border-radius: 5px;
+    background-color: #f1f3f5;
+}
+
+.form .form-input:focus {
+    /* Pseudo class */
+    outline-color: transparent;
+    background-color: white;
+}
+
+/* The submit btn's styles */
+.form .submit-btn {
+    padding: 1em;
+    border: none;
+    background-color: #199CFB;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
 }
